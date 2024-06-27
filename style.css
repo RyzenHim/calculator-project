@@ -70,7 +70,7 @@ button {
   font-size: 22px;
   border: none;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-  margin: 10px 10px 10px 15px;
+  margin: 10px;
   border-radius: 5px;
   transition: 0.1s;
   backdrop-filter: blur(15px);
@@ -101,79 +101,80 @@ button:active {
   margin-bottom: 100px;
   /* padding: 15px 0; */
 }
-#modulo {
+.modulo {
   grid-area: modulo;
 }
 
-#ce {
+.clr {
   grid-area: ce;
-  width: 260px;
+
+  background-color: red;
 }
 
-#del {
+.del {
   grid-area: del;
 }
 
-#btn1 {
+.btn1 {
   grid-area: btn1;
 }
 
-#btn2 {
+.btn2 {
   grid-area: btn2;
 }
-#btn3 {
+.btn3 {
   grid-area: btn3;
 }
 
-#divide {
+.divide {
   grid-area: divide;
 }
 
-#btn4 {
+.btn4 {
   grid-area: btn4;
 }
 
-#btn5 {
+.btn5 {
   grid-area: btn5;
 }
 
-#btn6 {
+.btn6 {
   grid-area: btn6;
 }
 
-#multiply {
+.multiply {
   grid-area: multiply;
 }
 
-#btn7 {
+.btn7 {
   grid-area: btn7;
 }
 
-#btn8 {
+.btn8 {
   grid-area: btn8;
 }
 
-#btn9 {
+.btn9 {
   grid-area: btn9;
 }
 
-#substract {
+.substract {
   grid-area: substract;
 }
 
-#add {
+.add {
   grid-area: add;
 }
 
-#zero {
+.zero {
   grid-area: zero;
 }
 
-#dot {
+.dot {
   grid-area: dot;
 }
 
-#equalto {
+.equalto {
   grid-area: equalto;
 }
 
@@ -186,9 +187,11 @@ button:active {
     "btn4 btn5 btn6 multiply"
     "btn7 btn8 btn9 substract"
     "add zero dot equalto";
-  margin: 0 auto;
+  /* margin: 0 auto; */
   /* background: #000; */
-  text-align: center;
+  /* text-align: center; */
+  /* align-items: stretch; */
+  justify-content: space-between;
 }
 .subdiv {
   outline: 1px solid rgba(0, 0, 0, 0.244);
@@ -198,5 +201,5 @@ button:active {
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   border-radius: 5px;
   overflow: hidden;
-  padding: 15px 0;
+  padding: 5px 0;
 }

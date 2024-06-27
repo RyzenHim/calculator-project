@@ -10,7 +10,7 @@ let result = () => {
   try {
     input.value = eval(input.value);
   } catch (err) {
-    alert("Enter the valid result ");
+    alert("Enter valid sequence ");
   }
 };
 
