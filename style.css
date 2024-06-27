@@ -1,0 +1,202 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* #ecfof3 */
+h1 {
+  /* text-align: center; */
+  /* height: 10vh; */
+  background-color: #212a3e;
+  color: white;
+  font-weight: 500;
+  width: 100%;
+  /* height: 10%; */
+  /* transform: translateY(50%); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  outline: 1px solid rgba(0, 0, 0, 0.405);
+  letter-spacing: 3px;
+  padding: 5px;
+}
+.choice button {
+  height: 100px;
+  width: 100px;
+}
+input {
+  width: 600px;
+  height: 80px;
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 4vh;
+  letter-spacing: 1vh;
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  padding: 15px;
+  margin-bottom: 15px;
+  text-align: end;
+}
+.result {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23);
+}
+input:focus {
+  outline: none;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  /* margin-top: 10px; */
+  /* background: rgb(132, 110, 242); */
+  background: #394867;
+  height: 100vh;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  color: white;
+  font-size: 22px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  margin: 10px 10px 10px 15px;
+  border-radius: 5px;
+  transition: 0.1s;
+  backdrop-filter: blur(15px);
+  cursor: pointer;
+}
+button:hover {
+  background-color: #212a3e;
+}
+button:focus {
+  /* outline: black; */
+  /* border: 1px solid white; */
+
+  /* background-color: rgb(228, 198, 255); */
+}
+button:active {
+  /* border: 1px solid white; */
+  /* box-shadow: none; */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transform: scale(0.9);
+  background-color: #34425da0;
+  color: rgb(255, 255, 255);
+}
+.maindiv {
+  width: 600px;
+  height: 800px;
+  /* background: rebeccapurple; */
+  margin-bottom: 100px;
+  /* padding: 15px 0; */
+}
+#modulo {
+  grid-area: modulo;
+}
+
+#ce {
+  grid-area: ce;
+  width: 260px;
+}
+
+#del {
+  grid-area: del;
+}
+
+#btn1 {
+  grid-area: btn1;
+}
+
+#btn2 {
+  grid-area: btn2;
+}
+#btn3 {
+  grid-area: btn3;
+}
+
+#divide {
+  grid-area: divide;
+}
+
+#btn4 {
+  grid-area: btn4;
+}
+
+#btn5 {
+  grid-area: btn5;
+}
+
+#btn6 {
+  grid-area: btn6;
+}
+
+#multiply {
+  grid-area: multiply;
+}
+
+#btn7 {
+  grid-area: btn7;
+}
+
+#btn8 {
+  grid-area: btn8;
+}
+
+#btn9 {
+  grid-area: btn9;
+}
+
+#substract {
+  grid-area: substract;
+}
+
+#add {
+  grid-area: add;
+}
+
+#zero {
+  grid-area: zero;
+}
+
+#dot {
+  grid-area: dot;
+}
+
+#equalto {
+  grid-area: equalto;
+}
+
+.choice {
+  /* background: #000; */
+  display: grid;
+  grid-template-areas:
+    "modulo ce ce del "
+    "btn1 btn2 btn3 divide"
+    "btn4 btn5 btn6 multiply"
+    "btn7 btn8 btn9 substract"
+    "add zero dot equalto";
+  margin: 0 auto;
+  /* background: #000; */
+  text-align: center;
+}
+.subdiv {
+  outline: 1px solid rgba(0, 0, 0, 0.244);
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transform: scale(0.9); */
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 15px 0;
+}

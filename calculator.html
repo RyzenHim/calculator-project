@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Calculator</h1>
+      <div class="maindiv">
+        <div class="subdiv">
+          <div class="result">
+            <input type="text" class="input" placeholder="0" />
+          </div>
+          <div class="choice">
+            <button onclick="calculate(1)" id="btn btn1">1</button>
+            <button onclick="calculate(2)" id="btn btn2">2</button>
+            <button onclick="calculate(3)" id="btn btn3">3</button>
+            <button onclick="calculate(4)" id="btn btn4">4</button>
+            <button onclick="calculate(5)" id="btn btn5">5</button>
+            <button onclick="calculate(6)" id="btn btn6">6</button>
+            <button onclick="calculate(7)" id="btn btn7">7</button>
+            <button onclick="calculate(8)" id="btn btn8">8</button>
+            <button onclick="calculate(9)" id="btn btn9">9</button>
+            <button onclick="calculate(0)" id="btn zero">0</button>
+            <button onclick="calculate('.')" id="btn dot">.</button>
+            <button onclick="calculate('%')" id="btn modulo">%</button>
+            <button onclick="calculate('+')" id="btn add">+</button>
+            <button onclick="calculate('-')" id="btn substract">-</button>
+            <button onclick="calculate('*')" id="btn multiply">*</button>
+            <button onclick="calculate('/')" id="btn divide">/</button>
+            <button onclick="result()" id="btn equalto">=</button>
+            <button onclick="clr()" id="btn ce">Clr</button>
+            <button onclick="del()" id="btn del">Del</button>
+          </div>
+        </div>
+      </div>
+      <script src="calc.js"></script>
+    </main>
+  </body>
+</html>
