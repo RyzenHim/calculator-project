@@ -4,23 +4,37 @@
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
+:root {
+  --primary-color: #212a3e;
+  --secondary-color: #edeff2;
+}
+.day_mode {
+  --primary-color: #6394df;
+  --secondary-color: #212a3e;
+}
 /* #ecfof3 */
-h1 {
-  /* text-align: center; */
-  /* height: 10vh; */
-  background-color: #212a3e;
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+
+  height: 5vh;
+  background-color: var(--primary-color);
   color: white;
   font-weight: 500;
-  width: 100%;
-  /* height: 10%; */
-  /* transform: translateY(50%); */
-  display: flex;
   align-items: center;
-  justify-content: center;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   outline: 1px solid rgba(0, 0, 0, 0.405);
   letter-spacing: 3px;
-  padding: 5px;
+  /* padding: 5px; */
+  position: relative;
+}
+nav span {
+  position: absolute;
+  right: 50px;
+  cursor: pointer;
+  /* background: white; */
+  width: 2%;
 }
 .choice button {
   height: 100px;
@@ -57,7 +71,7 @@ main {
   gap: 50px;
   /* margin-top: 10px; */
   /* background: rgb(132, 110, 242); */
-  background: #394867;
+  background-color: var(--primary-color);
   height: 100vh;
 }
 
@@ -108,7 +122,7 @@ button:active {
 .clr {
   grid-area: ce;
 
-  background-color: red;
+  background-color: orangered;
 }
 
 .del {
