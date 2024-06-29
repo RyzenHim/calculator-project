@@ -36,6 +36,37 @@ nav span {
   /* background: white; */
   width: 2%;
 }
+.dropdown {
+  position: absolute;
+  right: 150px;
+  top: 0;
+  width: auto;
+  display: inline-block;
+}
+.dropdown button {
+  border: none;
+  /* background-color: #6ce561; */
+  width: 8vw;
+  padding: 10px;
+  height: 4.7vh;
+  border-radius: 0;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin: 0;
+  border-bottom: 1px solid white;
+}
+.dropdown_content {
+  /* visibility: collapse; */
+  display: none;
+}
+
+.dropdown:hover .dropdown_content {
+  /* visibility: visible; */
+  display: block;
+}
+
 .choice button {
   height: 100px;
   width: 100px;
@@ -196,8 +227,8 @@ button:active {
   /* background: #000; */
   display: grid;
   grid-template-areas:
-    "modulo ce ce del "
-    "btn1 btn2 btn3 divide"
+    "modulo divide divide ce "
+    "btn1 btn2 btn3 del"
     "btn4 btn5 btn6 multiply"
     "btn7 btn8 btn9 substract"
     "add zero dot equalto";
